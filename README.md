@@ -17,29 +17,7 @@ Destination pool mints tokens → releaseOrMint() called by OffRamp
 User receives tokens → With preserved interest rate
 
 # Visual: Complete chainlink CCIP Setup Checklist
-CHAIN A (e.g., Sepolia)                 CHAIN B (e.g., zkSync Sepolia)
-═══════════════════════                 ═══════════════════════════════
-
-□ 1. Deploy Token                       □ 1. Deploy Token
-      ↓                                       ↓
-□ 2. Deploy Pool                        □ 2. Deploy Pool
-      ↓                                       ↓
-□ 3. Token.grantMintAndBurnRole(pool)   □ 3. Token.grantMintAndBurnRole(pool)
-      ↓                                       ↓
-□ 4a. RegistryModule.registerAdminViaOwner(token)    □ 4a. Same
-      ↓                                       ↓
-□ 4b. TokenAdminRegistry.acceptAdminRole(token)      □ 4b. Same
-      ↓                                       ↓
-□ 4c. TokenAdminRegistry.setPool(token, pool)        □ 4c. Same
-      ↓                                       ↓
-□ 5. Pool.applyChainUpdates(chainB info)             □ 5. Pool.applyChainUpdates(chainA info)
-      ↓                                       ↓
-═══════════════════════════════════════════════════════════════
-      │                                       │
-      └───────────── CCIP READY ──────────────┘
-                         │
-                         ▼
-               □ 6. Bridge tokens!
+<img width="694" height="463" alt="image" src="https://github.com/user-attachments/assets/3153bd11-1396-45bc-995b-e240dca004c3" />
 
 ## Features
 
