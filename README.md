@@ -41,7 +41,7 @@ CHAIN A (e.g., Sepolia)                 CHAIN B (e.g., zkSync Sepolia)
                          ▼
                □ 6. Bridge tokens!
 
-               ## Features
+## Features
 
 - **Rebasing Mechanism**: Token balances automatically increase based on per-user interest rates
 - **Cross-Chain Bridging**: Seamlessly transfer tokens between supported chains via Chainlink CCIP
