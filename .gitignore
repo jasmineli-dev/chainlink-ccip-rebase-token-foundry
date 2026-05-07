@@ -1,0 +1,23 @@
+# Foundry
+cache/
+out/
+zkout/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Dependencies (optional - can include or exclude)
+# lib/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Broadcast artifacts
+broadcast/
+
+# Editor
+.vscode/
+.idea/
